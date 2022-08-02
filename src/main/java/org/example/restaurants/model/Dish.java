@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Table
@@ -11,4 +12,6 @@ import javax.persistence.Table;
 @Getter
 @Setter
 public class Dish {
+    @Id
+    private int id;
 }

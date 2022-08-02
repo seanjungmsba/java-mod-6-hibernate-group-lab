@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a08601dd-2305-4399-a27d-96bb8e6d2003" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bank/model/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bank/model/BankAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jaystuff/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jaystuff/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/restaurants/model/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/restaurants/model/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/restaurants/model/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/restaurants/model/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/snippets/model/Snippet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/snippets/model/Snippet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sports/model/Statistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sports/model/Statistic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +56,7 @@
       <recent name="org.example.shared.io.validation" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DecoratorExample">
+  <component name="RunManager" selected="Application.org.example.jaystuff.Main">
     <configuration name="DecoratorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.bank.db.DecoratorExample" />
       <module name="GroupWork" />
@@ -78,8 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DecoratorExample" />
         <item itemvalue="Application.org.example.jaystuff.Main" />
+        <item itemvalue="Application.DecoratorExample" />
       </list>
     </recent_temporary>
   </component>
