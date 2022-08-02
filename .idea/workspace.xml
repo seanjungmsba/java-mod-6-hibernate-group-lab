@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a08601dd-2305-4399-a27d-96bb8e6d2003" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bank/BankMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bank/db/BankAccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bank/model/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bank/service/BankAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jaystuff/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jaystuff/db/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jaystuff/model/PrimaryTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jaystuff/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jaystuff/service/SchoolService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/restaurants/RestaurantsMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/restaurants/db/RestaurantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/restaurants/model/Dish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/restaurants/model/Restaurant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/restaurants/service/RestaurantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shared/io/UserInputService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shared/io/UserOutputService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shared/io/console/ConsoleUserInputServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shared/io/console/ConsoleUserOutputServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shared/io/db/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shared/io/validation/InputValidationRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shared/io/validation/NonBlankInputValidationRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/snippets/SnippetMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/snippets/db/SnippetsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/snippets/model/Snippet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/snippets/service/SnippetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sports/SportsMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sports/db/StatisticRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sports/model/Statistic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sports/service/StatisticsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ClwQZH3TGmtOnMfHYBpA9ET4Yi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/jaymansmann/Documents/blackrock/week7/GroupWork/src/main/java/org/example/jaystuff/service"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/jaystuff/service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.shared.io.validation" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DecoratorExample">
+    <configuration name="DecoratorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.bank.db.DecoratorExample" />
+      <module name="GroupWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.bank.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.jaystuff.Main" />
+      <module name="GroupWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.jaystuff.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DecoratorExample" />
+        <item itemvalue="Application.org.example.jaystuff.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a08601dd-2305-4399-a27d-96bb8e6d2003" name="Changes" comment="" />
+      <created>1659390464413</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659390464413</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
