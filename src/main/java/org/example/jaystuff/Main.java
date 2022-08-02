@@ -22,9 +22,6 @@ public class Main {
             userOutputService.print("WELCOME");
             String response = userInputService.getUserInput("What's the student name?",
                     new NonBlankInputValidationRule());
-//            Example confirmedResponse = userInputService.getUserChoice("Is " + response + " correct?", Example.values());
-//            userOutputService.print(confirmedResponse.toString());
-
 
             // create a new student instance
             Student student1 = new Student();
@@ -33,16 +30,19 @@ public class Main {
             student1.setDob(Date.from(Instant.now()));
             student1.setPrimaryTeacher(PrimaryTeacher.JAY);
 
-            // create EntityManager
+            // create EntityManager (copy paste this when needed)
             EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("example");
             EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-            // access transaction object
+            // access transaction object (copy paste this when needed)
             EntityTransaction transaction = entityManager.getTransaction();
 
-            // create and use transactions
+            // create and use transactions (copy paste this when needed)
             transaction.begin();
-            entityManager.persist(student1);
+
+            entityManager.persist(student1); // IMPORTANT!
+
+            // commit your transaction (copy paste this when needed)
             transaction.commit();
         }
     }
