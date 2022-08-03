@@ -1,18 +1,48 @@
 package org.example.bank.db;
 
 import org.example.bank.model.BankAccount;
-import org.example.shared.io.db.Repository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
 import java.util.Optional;
 
-public class BankAccountRepository implements Repository<BankAccount> {
-    @Override
-    public BankAccount save(BankAccount bankAccount) {
-        return null;
+public class BankAccountRepository {//implements Repository<BankAccount> {
+
+    private final EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("example");
+    private final EntityManager entityManager = entityManagerFactory.createEntityManager();
+    private final EntityTransaction transaction = entityManager.getTransaction();
+
+    //    @Override
+    public BankAccount save(BankAccount bankAccount) { // saving a bank account to a database
+
+        // create and use transactions (copy paste this when needed)
+        transaction.begin();
+
+        // Part 1D - Insert
+        entityManager.persist(bankAccount); // IMPORTANT!
+
+        transaction.commit();
+
+        return bankAccount;
     }
 
-    @Override
-    public Optional<BankAccount> findById(Long id) {
-        return Optional.empty();
+    //    @Override
+    public Optional<BankAccount> findById(int id) {
+        BankAccount bankAccount = entityManager.find(BankAccount.class, id);
+        return Optional.ofNullable(bankAccount);
+    }
+
+    public EntityManagerFactory getEntityManagerFactory() {
+        return entityManagerFactory;
+    }
+
+    public EntityManager getEntityManager() {
+        return entityManager;
+    }
+
+    public EntityTransaction getTransaction() {
+        return transaction;
     }
 }
