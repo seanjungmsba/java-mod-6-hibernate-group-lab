@@ -17,14 +17,9 @@ public class BankAccountRepository {//implements Repository<BankAccount> {
     //    @Override
     public BankAccount save(BankAccount bankAccount) { // saving a bank account to a database
 
-        // create and use transactions (copy paste this when needed)
         transaction.begin();
-
-        // Part 1D - Insert
         entityManager.persist(bankAccount); // IMPORTANT!
-
         transaction.commit();
-
         return bankAccount;
     }
 

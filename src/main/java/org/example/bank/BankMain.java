@@ -2,19 +2,20 @@ package org.example.bank;
 
 import org.example.bank.db.BankAccountRepository;
 import org.example.bank.model.BankAccount;
+import org.example.bank.service.BankAccountService;
+import org.example.bank.service.BankAccountServiceImplementation;
 import org.example.shared.io.UserInputService;
 import org.example.shared.io.UserOutputService;
 import org.example.shared.io.console.ConsoleUserInputServiceImpl;
 import org.example.shared.io.console.ConsoleUserOutputServiceImpl;
 import org.example.shared.io.validation.NonBlankInputValidationRule;
 
-import java.util.Optional;
-
 public class BankMain {
     public static void main(String[] args) {
 
         UserOutputService userOutputService = new ConsoleUserOutputServiceImpl();
         BankAccountRepository bankAccountRepository = new BankAccountRepository();
+        BankAccountService implementation = new BankAccountServiceImplementation(bankAccountRepository);
 
         try (UserInputService userInputService = new ConsoleUserInputServiceImpl(userOutputService)) {
             userOutputService.print("WELCOME TO THE SEAN-JUAN BANK");
@@ -22,8 +23,10 @@ public class BankMain {
             boolean processing = true;
             while (processing) {
 
+                // TODO: getUserChoice("Question", 1,2,3);
                 int createOrChoose = Integer.parseInt(userInputService.getUserInput("ENTER [1] to CREATE a new bank account \nENTER [2] to CHOOSE an existing bank account to deposit or withdraw\nENTER [3] to exit out of the program",
                         new NonBlankInputValidationRule()));
+
 
                 switch (createOrChoose) {
                     case 1: // create
@@ -50,31 +53,15 @@ public class BankMain {
                                 new NonBlankInputValidationRule()));
 
                         switch (choice) {
-                            case 1:
-                                Optional<BankAccount> optionalBankAccount = bankAccountRepository.findById(lookupID);
-                                if (optionalBankAccount.isPresent()) {
-                                    BankAccount bankAccount = optionalBankAccount.get();
-                                    Double deposit = Double.valueOf(userInputService.getUserInput("How much do you want to deposit?",
-                                            new NonBlankInputValidationRule()));
-                                    bankAccount.deposit(deposit);
-                                    bankAccount.getBalance();
-                                    bankAccountRepository.save(bankAccount);
-                                } else {
-                                    System.err.println("No bank account exists!");
-                                }
+                            case 1: // deposit
+                                Double depositAmount = Double.valueOf(userInputService.getUserInput("How much do you want to deposit?",
+                                        new NonBlankInputValidationRule()));
+                                implementation.deposit(lookupID, depositAmount);
                                 break;
-                            case 2:
-                                Optional<BankAccount> bankAccountToWithdraw = bankAccountRepository.findById(lookupID);
-                                if (bankAccountToWithdraw.isPresent()) {
-                                    BankAccount bankAccount = bankAccountToWithdraw.get();
-                                    Double withdraw = Double.valueOf(userInputService.getUserInput("How much do you want to withdraw?",
-                                            new NonBlankInputValidationRule()));
-                                    bankAccount.withdraw(withdraw);
-                                    bankAccount.getBalance();
-                                    bankAccountRepository.save(bankAccount);
-                                } else {
-                                    System.err.println("No bank account exists!");
-                                }
+                            case 2: // withdraw
+                                Double withdrawAmount = Double.valueOf(userInputService.getUserInput("How much do you want to withdraw?",
+                                        new NonBlankInputValidationRule()));
+                                implementation.withdraw(lookupID, withdrawAmount);
                                 break;
                         }
                         break;
