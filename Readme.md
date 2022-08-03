@@ -44,6 +44,7 @@ Everyone should keep in mind the following
 * The user's input is saved to a database.
 * The user can then enter another restaurant's information.
 * The user can also see all restaurants (ordered by review high to low).
+
 ***Phase 1 Stretch***:
 * The user can search for restaurants by name and location.
 
@@ -63,6 +64,7 @@ Everyone should keep in mind the following
 * The user's input is saved to a database.
 * The user can then enter another game of statistics for that same athlete.
 * The user can request average number of points, max number of points in a game, etc.
+
 ***Phase 1 Stretch***:
 * The user can input information for multiple athletes.
 
@@ -82,6 +84,7 @@ Everyone should keep in mind the following
 * The user's input is saved to a database.
 * The user can then enter another snippet.
 * The user can search for snippets by title.
+
 ***Phase 1 Stretch***:
 * The user is prompted for 'tags' for that snippet (easily searchable terms).
 
@@ -102,6 +105,7 @@ Everyone should keep in mind the following
 * The user can withdraw money.
 * The user can see how much money is in their account.
 * The user can create another account.
+
 ***Phase 1 Stretch***:
 * The user can transfer money between accounts.
 
