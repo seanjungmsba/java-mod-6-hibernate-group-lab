@@ -13,6 +13,8 @@ import org.example.shared.io.validation.NonBlankInputValidationRule;
 public class BankMain {
     public static void main(String[] args) {
 
+        // TODO: The user can see a record of all deposits and withdrawals and transfers from their accounts.
+
         UserOutputService userOutputService = new ConsoleUserOutputServiceImpl();
         BankAccountRepository bankAccountRepository = new BankAccountRepository();
         BankAccountService implementation = new BankAccountServiceImplementation(bankAccountRepository);
@@ -23,10 +25,8 @@ public class BankMain {
             boolean processing = true;
             while (processing) {
 
-                // TODO: getUserChoice("Question", 1,2,3);
-                int createOrChoose = Integer.parseInt(userInputService.getUserInput("ENTER [1] to CREATE a new bank account \nENTER [2] to CHOOSE an existing bank account to deposit or withdraw\nENTER [3] to exit out of the program",
+                int createOrChoose = Integer.parseInt(userInputService.getUserInput("ENTER [1] to CREATE a new bank account \nENTER [2] to CHOOSE an existing bank account to deposit, withdraw, transfer, or check balance\nENTER [3] to exit out of the program",
                         new NonBlankInputValidationRule()));
-
 
                 switch (createOrChoose) {
                     case 1: // create
@@ -49,7 +49,7 @@ public class BankMain {
                         int lookupID = Integer.parseInt(userInputService.getUserInput("Enter ID of the bank account user",
                                 new NonBlankInputValidationRule()));
 
-                        int choice = Integer.parseInt(userInputService.getUserInput("Enter [1] to deposit \nEnter [2] to withdraw",
+                        int choice = Integer.parseInt(userInputService.getUserInput("Enter [1] to deposit \nEnter [2] to withdraw \nEnter [3] to transfer \nEnter [4] to check balance",
                                 new NonBlankInputValidationRule()));
 
                         switch (choice) {
@@ -63,10 +63,24 @@ public class BankMain {
                                         new NonBlankInputValidationRule()));
                                 implementation.withdraw(lookupID, withdrawAmount);
                                 break;
+                            case 3: // transfer
+                                int receiverID = Integer.parseInt(userInputService.getUserInput("Enter ID of the bank account user who will receive the transfer",
+                                        new NonBlankInputValidationRule()));
+                                if (receiverID == lookupID) {
+                                    userOutputService.print("You cannot make transfer within the same account!");
+                                    break;
+                                }
+                                Double transferAmount = Double.valueOf(userInputService.getUserInput("How much do you want to transfer?",
+                                        new NonBlankInputValidationRule()));
+                                implementation.transfer(lookupID, receiverID, transferAmount);
+                                break;
+                            case 4: // check balance
+                                userOutputService.print("Available balance: $" + implementation.checkBalance(lookupID));
+                                break;
                         }
                         break;
                     case 3:
-                        System.out.println("Bank is closed for the day");
+                        userOutputService.print("Bank is closed for the day");
                         processing = false;
                         System.exit(0);
                 }
